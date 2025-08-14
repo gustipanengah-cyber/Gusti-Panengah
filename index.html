@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gusti Panengah</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Splash Screen Modern -->
+    <div id="welcome-screen">
+      <div class="welcome-logo">
+        <span class="logo-icon">G</span>
+      </div>
+      <p class="welcome-text">Welcome to My Portfolio</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="logo"><span class="logo-icon">G</span>ustipanengah.</div>
+      <nav class="nav-links" id="navMenu">
+        <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="far fa-id-card"></i> About</a>
+
+        <a href="#certificate"><i class="fas fa-award"></i> Certificate</a>
+
+        <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+        <a href="#business-experience"
+          ><i class="fas fa-briefcase"></i> Business</a
+        >
+        <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      </nav>
+      <!-- Burger Icon -->
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="section-slide" id="home">
+      <div class="section-text">
+        <p class="greeting">Hi, there!</p>
+        <h1><span class="highlight">GUSTI</span> IS HERE TO HELP YOU</h1>
+        <p class="subtitle">
+          Website ini dirancang untuk memberikan informasi yang jelas, layanan
+          yang mudah diakses, dan pengalaman yang menyenangkan. Jelajahi
+          berbagai fitur, baca artikel informatif, lihat portofolio, atau
+          hubungi kami secara langsung. Semoga kunjungan Anda menjadi awal
+          hubungan yang baik dan bermanfaat. Selamat menjelaja
+        </p>
+        <button class="cta" onclick="window.location.href='#about'">
+          Let's Discuss
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="main-container">
+      <div class="about-wrapper">
+        <div class="about-image scroll-animate from-left">
+          <img src="images/profile.png" alt="Foto Profil Gusti Panengah" />
+        </div>
+        <div class="about-text scroll-animate from-right">
+          <h2>Hi, I'm Gusti Panengah</h2>
+          <p>
+            Lulusan SMK Warga Surakarta jurusan Teknik Pemesinan. Berminat pada
+            teknik dan manufaktur, khususnya permesinan presisi. Teliti,
+            disiplin, dan selalu berorientasi pada hasil fungsional, estetis,
+            serta bermanfaat, dengan semangat belajar yang tinggi.
+          </p>
+
+          <!-- Tombol aksi -->
+          <div class="button-group">
+            <a href="https://wa.me/6285842885489" target="_blank" class="cta">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="mailto:gustipanengah@gmmail.com" class="cta">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificate" class="main-container">
+      <h3 class="pre-title">🏅 My Works</h3>
+      <h1 class="section-title"><span>Featured</span> Certificate</h1>
+      <div class="grid-3">
+        <!-- SolidWorks -->
+        <div class="portfolio fade-in">
+          <div class="portfolio-cover">
+            <img src="./images/portfolios/1.png" alt="SolidWorks Certificate" />
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-title">
+              <h4><i class="fas fa-cogs"></i> SolidWorks</h4>
+              <a href="./images/portfolios/1.png" class="portfolio-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="portfolio-tags">
+              <div>Part</div>
+              <div>Assembly</div>
+              <div>Drawing</div>
+            </div>
+            <p>
+              Sertifikat CSWA yang mengakui kemampuan dasar dalam pembuatan
+              part, assembly, dan drawing menggunakan SolidWorks.
+            </p>
+          </div>
+        </div>
+
+        <!-- SolidWorks Training -->
+        <div class="portfolio fade-in">
+          <div class="portfolio-cover">
+            <img src="./images/portfolios/2.png" alt="SolidWorks Training" />
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-title">
+              <h4>
+                <i class="fas fa-drafting-compass"></i> SolidWorks Training
+              </h4>
+              <a href="./images/portfolios/2.png" class="portfolio-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="portfolio-tags">
+              <div>Surface</div>
+              <div>Sheet Metal</div>
+            </div>
+            <p>
+              Sertifikat pelatihan SolidWorks yang mencakup Surface Modeling dan
+              Sheet Metal.
+            </p>
+          </div>
+        </div>
+
+        <!-- CNC Milling -->
+        <div class="portfolio fade-in">
+          <div class="portfolio-cover">
+            <img
+              src="./images/portfolios/3.png"
+              alt="CNC Milling Certificate"
+            />
+          </div>
+          <div class="portfolio-info">
+            <div class="portfolio-title">
+              <h4><i class="fas fa-industry"></i> CNC Milling</h4>
+              <a href="./images/portfolios/3.png" class="portfolio-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="portfolio-tags">
+              <div>Pemrograman</div>
+              <div>Pengoperasian</div>
+            </div>
+            <p>
+              Sertifikat kompetensi memprogram dan mengoperasikan mesin CNC
+              Milling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="main-container">
+      <h3 class="pre-title">✨ My Skills</h3>
+      <h1 class="section-title"><span>Professional</span> Skills</h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-tools"></i></div>
+          <h3>Framework</h3>
+          <ul>
+            <li><i class="fab fa-laravel"></i> Laravel</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+            <li><i class="fab fa-angular"></i> Angular</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+          <h3>Teknik Mesin</h3>
+          <ul>
+            <li><i class="fas fa-drafting-compass"></i> Perancangan Mesin</li>
+            <li><i class="fas fa-wrench"></i> Pemeliharaan Mesin</li>
+            <li><i class="fas fa-industry"></i> Manufaktur</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS EXPERIENCE -->
+    <section id="business-experience" class="main-container">
+      <h3 class="pre-title">📈 My Journey</h3>
+      <h1 class="section-title"><span>Lynk.ID</span> Experience</h1>
+      <div class="business-wrapper scroll-animate">
+        <!-- Deskripsi -->
+        <div class="business-text scroll-animate">
+          <h2>From Lynnk.ID</h2>
+          <div class="business-intro scroll-animate">
+            <img
+              src="./images/businnes/lynk.jpg"
+              alt="Business Owner"
+              class="intro-img"
+            />
+            <p
+              id="typing"
+              class="typewriter"
+              data-text="bisnis produk digital saya berkembang pesat berkat inovasi berkelanjutan dan layanan yang konsisten, menghasilkan peningkatan pendapatan yang signifikan."
+            ></p>
+          </div>
+          <ul>
+            <li>
+              <i class="fas fa-globe"></i>
+              <a href="https://lynk.id/sparkly_" target="_blank"
+                >link di sini</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Grafik -->
+        <div class="business-chart">
+          <canvas id="growthChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="main-container">
+      <h3 class="pre-title">🎓 Learning Path</h3>
+      <h1 class="section-title"><span>My</span> Education</h1>
+      <div class="education-contact-wrapper scroll-animate">
+        <div class="education-timeline scroll-animate">
+          <div class="education-item scroll-animate">
+            <h4>SD Negeri Joho 1</h4>
+            <span>2013 – 2019</span>
+          </div>
+          <div class="education-item scroll-animate">
+            <h4>SMP Negeri 2 Mojolaban</h4>
+            <span>2019 – 2022</span>
+          </div>
+          <div class="education-item scroll-animate">
+            <h4>SMK Warga Surakarta</h4>
+            <p>Teknik Pemesinan</p>
+            <span>2022 – 2025</span>
+          </div>
+        </div>
+        <div class="contact-info-wrapper">
+          <div class="contact-block">
+            <h4>📍 Address</h4>
+            <p>
+              Desa Joho, Kecamatan Mojolaban, Kabupaten Sukoharjo, Jawa Tengah
+              Indonesia
+            </p>
+          </div>
+          <div class="contact-block">
+            <h4>📞 Phone</h4>
+            <p>(+62) 858-4288-5498</p>
+          </div>
+          <div class="contact-block">
+            <h4>📧 Email</h4>
+            <p>gustipanengah@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <form class="contact-form scroll-animate">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer><p>© 2025 - Gusti Panengah</p></footer>
+
+    <!-- Scripts -->
+    <script src="typing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Animasi Scroll & Portfolio
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(
+          ".scroll-animate, .skill-card, .portfolio"
+        );
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+        elements.forEach((el) => observer.observe(el));
+      });
+
+      // Chart.js
+      const ctx = document.getElementById("growthChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: ["2022", "2023", "2024", "2025"],
+          datasets: [
+            {
+              label: "Revenue Growth",
+              data: [0, 20, 30, 45], // jumlah sesuai label
+              borderColor: "#00ff6a",
+              backgroundColor: "rgba(0, 255, 106, 0.2)",
+              fill: true,
+              tension: 0.4,
+              pointBackgroundColor: "#00ff6a",
+              pointRadius: 5,
+              pointHoverRadius: 8,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } },
+        },
+      });
+
+      // Reset Scroll Posisi ke Atas
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.addEventListener("load", () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      });
+
+      // Burger Menu
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("navMenu");
+      burger.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+        burger.classList.toggle("active");
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          document.getElementById("welcome-screen").style.display = "none";
+        }, 2000); // sesuai durasi animasi splash
+      });
+    </script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
