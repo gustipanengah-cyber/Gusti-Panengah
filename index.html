@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gusti Panengah</title>
 
-    <!-- Fonts -->
+    <!-- ===== FONT ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
+    <!-- ===== ICON ===== -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
-    <!-- Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-…"
+      crossorigin="anonymous"
+    />
+
+    <!-- ===== Styles ===== -->
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Splash Screen Modern -->
+    <!-- ===== WELCOME ===== -->
     <div id="welcome-screen">
       <div class="welcome-logo">
         <span class="logo-icon">G</span>
@@ -30,7 +37,7 @@
       <p class="welcome-text">Welcome to My Portfolio</p>
     </div>
 
-    <!-- NAVBAR -->
+    <!-- ===== NAVNAR ===== -->
     <header class="navbar">
       <div class="logo"><span class="logo-icon">G</span>ustipanengah.</div>
       <nav class="nav-links" id="navMenu">
@@ -45,13 +52,14 @@
         >
         <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
       </nav>
-      <!-- Burger Icon -->
+
+      <!-- ===== BURGER ICON ===== -->
       <div class="burger" id="burger">
         <span></span><span></span><span></span>
       </div>
     </header>
 
-    <!-- HOME -->
+    <!-- ===== HOME ===== -->
     <section class="section-slide" id="home">
       <div class="section-text">
         <p class="greeting">Hi, there!</p>
@@ -63,13 +71,41 @@
           hubungi kami secara langsung. Semoga kunjungan Anda menjadi awal
           hubungan yang baik dan bermanfaat. Selamat menjelaja
         </p>
-        <button class="cta" onclick="window.location.href='#about'">
-          Let's Discuss
-        </button>
+        <!-- Social Media Buttons -->
+        <div class="social-buttons">
+          <a
+            href="https://www.instagram.com/gustipanenggah_?igsh=OTVvN3QyZ2Q3czI2"
+            target="_blank"
+            class="social-btn instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@gustipanengah?_t=ZS-8ysD47pX4DA&_r=1"
+            target="_blank"
+            class="social-btn tiktok"
+          >
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a
+            href="https://x.com/GustiPanengah?t=RjrS96vhm5uC3e8Ci4xNPw&s=09"
+            target="_blank"
+            class="social-btn x-twitter"
+          >
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://www.threads.com/@gustipanenggah_"
+            target="_blank"
+            class="social-btn threads"
+          >
+            <i class="fa-brands fa-threads"></i>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="main-container">
       <div class="about-wrapper">
         <div class="about-image scroll-animate from-left">
@@ -84,7 +120,7 @@
             serta bermanfaat, dengan semangat belajar yang tinggi.
           </p>
 
-          <!-- Tombol aksi -->
+          <!-- ===== ABOUT BUTTON ===== -->
           <div class="button-group">
             <a href="https://wa.me/6285842885489" target="_blank" class="cta">
               <i class="fab fa-whatsapp"></i> WhatsApp
@@ -92,12 +128,22 @@
             <a href="mailto:gustipanengah@gmmail.com" class="cta">
               <i class="fas fa-envelope"></i> Email
             </a>
+            <div class="button-group">
+              <a
+                href="./images/projects/CV GUSTI PANENGAH.jpeg"
+                class="cta"
+                id="download-cv"
+                download
+              >
+                <i class="fas fa-file-download"></i> Download CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATES -->
+    <!-- ===== CERTIFICAT ===== -->
     <section id="certificate" class="main-container">
       <h3 class="pre-title">🏅 My Works</h3>
       <h1 class="section-title"><span>Featured</span> Certificate</h1>
@@ -125,7 +171,6 @@
             </p>
           </div>
         </div>
-
         <!-- SolidWorks Training -->
         <div class="portfolio fade-in">
           <div class="portfolio-cover">
@@ -150,7 +195,6 @@
             </p>
           </div>
         </div>
-
         <!-- CNC Milling -->
         <div class="portfolio fade-in">
           <div class="portfolio-cover">
@@ -179,7 +223,6 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="main-container">
       <h3 class="pre-title">✨ My Skills</h3>
       <h1 class="section-title"><span>Professional</span> Skills</h1>
@@ -188,34 +231,86 @@
           <div class="skill-icon"><i class="fas fa-globe"></i></div>
           <h3>Web Development</h3>
           <ul>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-js-square"></i> JavaScript</li>
+            <li>
+              <i class="fab fa-html5"></i> HTML
+              <div class="progress-bar">
+                <div class="progress" data-progress="90"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt"></i> CSS
+              <div class="progress-bar">
+                <div class="progress" data-progress="85"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-js-square"></i> JavaScript
+              <div class="progress-bar">
+                <div class="progress" data-progress="75"></div>
+              </div>
+            </li>
           </ul>
         </div>
+
         <div class="skill-card">
           <div class="skill-icon"><i class="fas fa-tools"></i></div>
           <h3>Framework</h3>
           <ul>
-            <li><i class="fab fa-laravel"></i> Laravel</li>
-            <li><i class="fab fa-node-js"></i> Node.js</li>
-            <li><i class="fab fa-angular"></i> Angular</li>
-            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li>
+              <i class="fab fa-laravel"></i> Laravel
+              <div class="progress-bar">
+                <div class="progress" data-progress="70"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-node-js"></i> Node.js
+              <div class="progress-bar">
+                <div class="progress" data-progress="65"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-angular"></i> Angular
+              <div class="progress-bar">
+                <div class="progress" data-progress="60"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fab fa-bootstrap"></i> Bootstrap
+              <div class="progress-bar">
+                <div class="progress" data-progress="80"></div>
+              </div>
+            </li>
           </ul>
         </div>
+
         <div class="skill-card">
           <div class="skill-icon"><i class="fas fa-cogs"></i></div>
           <h3>Teknik Mesin</h3>
           <ul>
-            <li><i class="fas fa-drafting-compass"></i> Perancangan Mesin</li>
-            <li><i class="fas fa-wrench"></i> Pemeliharaan Mesin</li>
-            <li><i class="fas fa-industry"></i> Manufaktur</li>
+            <li>
+              <i class="fas fa-drafting-compass"></i> Perancangan Mesin
+              <div class="progress-bar">
+                <div class="progress" data-progress="85"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-wrench"></i> Pemeliharaan Mesin
+              <div class="progress-bar">
+                <div class="progress" data-progress="80"></div>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-industry"></i> Manufaktur
+              <div class="progress-bar">
+                <div class="progress" data-progress="75"></div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- BUSINESS EXPERIENCE -->
+    <!-- ===== BUSINESS ===== -->
     <section id="business-experience" class="main-container">
       <h3 class="pre-title">📈 My Journey</h3>
       <h1 class="section-title"><span>Lynk.ID</span> Experience</h1>
@@ -251,46 +346,57 @@
       </div>
     </section>
 
-    <!-- EDUCATION -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ===== EDUCATION ===== -->
     <section id="education" class="main-container">
-      <h3 class="pre-title">🎓 Learning Path</h3>
+      <h3 class="pre-title">
+        <i class="fa-solid fa-graduation-cap"></i> Learning Path
+      </h3>
       <h1 class="section-title"><span>My</span> Education</h1>
+
       <div class="education-contact-wrapper scroll-animate">
         <div class="education-timeline scroll-animate">
           <div class="education-item scroll-animate">
-            <h4>SD Negeri Joho 1</h4>
+            <h4><i class="fa-solid fa-school"></i> SD Negeri Joho 1</h4>
             <span>2013 – 2019</span>
           </div>
           <div class="education-item scroll-animate">
-            <h4>SMP Negeri 2 Mojolaban</h4>
+            <h4><i class="fa-solid fa-school"></i> SMP Negeri 2 Mojolaban</h4>
             <span>2019 – 2022</span>
           </div>
           <div class="education-item scroll-animate">
-            <h4>SMK Warga Surakarta</h4>
+            <h4><i class="fa-solid fa-school"></i> SMK Warga Surakarta</h4>
             <p>Teknik Pemesinan</p>
             <span>2022 – 2025</span>
           </div>
         </div>
+
         <div class="contact-info-wrapper">
           <div class="contact-block">
-            <h4>📍 Address</h4>
+            <h4><i class="fa-solid fa-location-dot"></i> Address</h4>
             <p>
               Desa Joho, Kecamatan Mojolaban, Kabupaten Sukoharjo, Jawa Tengah
               Indonesia
             </p>
           </div>
           <div class="contact-block">
-            <h4>📞 Phone</h4>
+            <h4><i class="fa-solid fa-phone"></i> Phone</h4>
             <p>(+62) 858-4288-5498</p>
           </div>
           <div class="contact-block">
-            <h4>📧 Email</h4>
+            <h4><i class="fa-solid fa-envelope"></i> Email</h4>
             <p>gustipanengah@gmail.com</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== CONTACT ===== -->
     <section class="contact-section" id="contact">
       <h2><i class="fas fa-envelope"></i> Contact</h2>
       <form class="contact-form scroll-animate">
@@ -303,14 +409,14 @@
       </form>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER ===== -->
     <footer><p>© 2025 - Gusti Panengah</p></footer>
 
-    <!-- Scripts -->
+    <!-- ===== SCRIPT ===== -->
     <script src="typing.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-      // Animasi Scroll & Portfolio
+      // Animasi Scroll & Portfolio (mengulang saat di-scroll)
       document.addEventListener("DOMContentLoaded", () => {
         const elements = document.querySelectorAll(
           ".scroll-animate, .skill-card, .portfolio"
@@ -320,7 +426,8 @@
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add("show");
-                observer.unobserve(entry.target);
+              } else {
+                entry.target.classList.remove("show"); // reset supaya bisa animasi ulang
               }
             });
           },
@@ -379,7 +486,6 @@
         }, 2000); // sesuai durasi animasi splash
       });
     </script>
-
     <script src="./js/main.js"></script>
   </body>
 </html>
