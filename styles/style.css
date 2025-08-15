@@ -194,11 +194,18 @@ ul {
   min-height: 100vh;
   background: var(--bg-dark);
   text-align: center;
+  width: 100%;
+  max-width: 100vw; /* cegah lebar berlebih */
+  overflow-x: hidden; /* cegah scroll horizontal */
 }
+
 .section-text {
   max-width: 800px;
   animation: fadeInUp 0.8s ease forwards;
+  padding: 0 1rem; /* jaga padding di layar kecil */
+  box-sizing: border-box;
 }
+
 .greeting {
   font-size: 1.2rem;
   font-weight: 500;
@@ -206,6 +213,7 @@ ul {
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
 }
+
 .section-text h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -213,15 +221,18 @@ ul {
   margin-bottom: 1rem;
   line-height: 1.3;
 }
+
 .section-text .highlight {
   color: var(--primary);
 }
+
 .subtitle {
   font-size: 1rem;
   color: var(--text-gray);
   margin-bottom: 2rem;
   line-height: 1.6;
 }
+
 /* Tombol CTA */
 .section-text .cta {
   padding: 0.8rem 1.5rem;
@@ -234,10 +245,12 @@ ul {
   font-weight: 600;
   transition: background 0.3s ease, transform 0.2s ease;
 }
+
 .section-text .cta:hover {
   background: #ff3b3b;
   transform: translateY(-2px);
 }
+
 /* Animasi Fade In */
 @keyframes fadeInUp {
   from {
@@ -249,15 +262,20 @@ ul {
     transform: translateY(0);
   }
 }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .section-slide {
+    flex-wrap: wrap; /* biar elemen turun kalau layar sempit */
+  }
   .section-text h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .subtitle {
     font-size: 0.95rem;
   }
 }
+
 /* CONTAINERS */
 .main-container {
   padding: 4rem 2rem;
@@ -410,21 +428,35 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-/* Kartu Portfolio */
+/* Kartu Portfolio dengan efek 3D */
 .portfolio {
   position: relative;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
   border-radius: var(--radius);
   overflow: hidden;
-  transform: translateY(20px) scale(0.98);
+  transform: translateY(20px) scale(0.98) rotateX(0) rotateY(0);
   opacity: 0;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.7s ease, opacity 0.8s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.8s ease;
   will-change: transform, opacity, box-shadow;
   cursor: pointer;
+  perspective: 1000px;
 }
+
+/* Saat muncul */
+.portfolio.show {
+  transform: translateY(0) scale(1) rotateX(0) rotateY(0);
+  opacity: 1;
+}
+
+/* Efek hover floating */
+.portfolio:hover {
+  transform: translateY(-8px) scale(1.02) rotateX(0) rotateY(0);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(var(--primary-rgb), 0.6);
+}
+
 /* Saat muncul */
 .portfolio.show {
   transform: translateY(0) scale(1);
@@ -890,18 +922,15 @@ h1 {
   transform: translateY(-2px);
   box-shadow: 0 0 12px rgba(255, 82, 82, 0.6);
 }
-
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .fade-up.show {
   opacity: 1;
   transform: translateY(0);
 }
-
 /* Social Buttons Container */
 .social-buttons {
   margin-top: 1.5rem;
@@ -909,7 +938,6 @@ h1 {
   gap: 1rem;
   justify-content: center;
 }
-
 /* Default Button Style */
 .social-btn {
   width: 45px;
@@ -924,36 +952,50 @@ h1 {
   transition: all 0.3s ease;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
-
 /* Hover efek */
 .social-btn:hover {
   transform: translateY(-5px) scale(1.1);
   box-shadow: 0 0 15px rgba(255, 50, 50, 0.5); /* glow merah */
 }
-
 /* Warna tiap platform */
 .instagram {
   background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
 }
-
 .tiktok {
   background: linear-gradient(45deg, #25f4ee, #fe2c55);
 }
-
 .x-twitter {
   background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
   border: 1px solid #ff2e2e; /* aksen merah */
 }
-
 .threads {
   background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
   border: 1px solid #ff2e2e;
 }
-
 /* ===== ICON STYLING ===== */
 .contact-block i,
 .education-item i,
 .pre-title i {
   color: #ff2e2e; /* warna ikon */
   font-size: 1.1rem;
+}
+
+/* Hapus scroll horizontal di seluruh halaman */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Pastikan semua elemen tidak lebih dari lebar layar */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Gambar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
